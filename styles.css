@@ -197,6 +197,7 @@ h3{font-size:19px;line-height:1.3;margin:0 0 6px;letter-spacing:-.01em}
 }
 @media (max-width:860px){
   .js .menu-btn{display:grid}
+  html:not(.js) nav a:not(.btn):not(.lang){display:none}
   .js .top nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:2px;padding:8px 16px 16px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 16px 32px -16px rgba(11,18,32,.25)}
   .js .top.open nav{display:flex}
   .js .top nav a{font-size:17px;padding:12px;color:var(--ink)}
