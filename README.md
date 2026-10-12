@@ -18,5 +18,5 @@ Owner of updates: the growth role, tracked from hq#113.
 - Every page needs: unique `<title>` and meta description, canonical,
   `hreflang` pair, Open Graph tags, and one `<h1>`.
 - No trackers or third-party scripts without an hq decision (personal data).
-- Not yet done: `og.png` (1200x630 social image), operator identification
-  line in the footer, Search Console verification after the site is live.
+- Not yet done: `og.png` (1200x630 social image), Search Console
+  verification.
