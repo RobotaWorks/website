@@ -259,3 +259,12 @@ h3{font-size:19px;line-height:1.3;margin:0 0 6px;letter-spacing:-.01em}
   .btn,.card,.menu-btn span,.menu-btn span::before,.menu-btn span::after{transition:none}
   .btn:hover,.card:hover{transform:none}
 }
+
+/* projects */
+.proj{display:flex;flex-direction:column;align-items:flex-start}
+.proj .badge{margin-bottom:14px}
+.proj p{margin-bottom:18px}
+.proj .more{margin-top:auto;font-weight:650;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.proj .more:hover{text-decoration:underline}
+.proj .more svg{width:16px;height:16px}
+.proj.muted{background:transparent;border-style:dashed}
