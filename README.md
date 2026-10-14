@@ -11,6 +11,8 @@ Owner of updates: the growth role, tracked from hq#113.
 - `en/index.html` - English company homepage, same structure
 - `seo-autopilot/index.html` - Czech product page for the Shoptet SEO autopilot
   add-on (was the homepage until 2026-10-14)
+- `popisy-produktu-prepsane/index.html` - Czech offer page for the one-off
+  product description rewrite (hq#164). No price until live payment links exist.
 - New project: give it its own folder page and add a card to the projects
   grid on both homepages and to `sitemap.xml`.
 - `robots.txt`, `sitemap.xml`, `404.html`, `CNAME`, `favicon.svg`, `styles.css`
