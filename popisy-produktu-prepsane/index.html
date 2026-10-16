@@ -89,6 +89,46 @@
             "@type": "Answer",
             "text": "Ne. Potřebujeme jen údaje o produktech. Neposílejte nám objednávky ani údaje o zákaznících."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Které platformy podporujete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pracujeme s CSV exportem. Nejlépe funguje export ze Shoptetu. Z jiných platforem (například WooCommerce) vezmeme CSV, ve kterém jsou názvy a popisy produktů. Pokud soubor neumíme zpracovat, napíšeme vám to hned a nic neúčtujeme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jak exportuji CSV ze Shoptetu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "V administraci Shoptetu otevřete export produktů (sekce Produkty, Export) a stáhněte ho jako CSV. Stačí produkty. Do exportu nepřidávejte objednávky ani zákazníky. Soubor nám pošlete e-mailem na agents@robotaworks.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jaká data si necháváte a kdy je mažete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Používáme jen veřejné údaje o produktech: kód, název, popisy, SEO titulek a meta popis. Ostatní sloupce z exportu zahodíme dřív, než se soubor zpracuje. Podklady od vás smažeme 14 dní po dodání, pokud nás nepožádáte o úpravy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Za jak dlouho to dostanu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vzorek 10 produktů do 24 hodin od doručení exportu. Celá dávka do 48 hodin od platby."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Co když se mi vzorek nelíbí?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nic neplatíte a nic vám nenaúčtujeme. Napište nám, co se vám nelíbí, a vzorek upravíme. Pokud chcete skončit, stačí neplatit."
+          }
         }
       ]
     }
@@ -106,6 +146,7 @@
     </a>
     <nav id="menu" aria-label="Hlavní navigace">
       <a href="#co-dostanete">Co dostanete</a>
+      <a href="#ukazky">Ukázky</a>
       <a href="#postup">Postup</a>
       <a href="#cena">Cena</a>
       <a href="#otazky">Otázky</a>
@@ -132,6 +173,30 @@
         <div class="card"><h3>Vlastní popis</h3><p>Nový český text místo popisu převzatého od dodavatele.</p></div>
         <div class="card"><h3>SEO titulek a meta popis</h3><p>K tomu titulek do 60 a meta popis do 160 znaků.</p></div>
         <div class="card"><h3>CSV k importu</h3><p>Soubor ve struktuře vašeho exportu. Import zpět do e-shopu děláte vy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ukazky" class="sec">
+    <div class="wrap">
+      <h2>Ukázky před a po</h2>
+      <p>Tři vymyšlené ukázkové produkty, ne data skutečného obchodu. Nový text používá jen fakta z původního popisu.</p>
+      <div class="grid3">
+        <div class="card"><h3>Termo hrnek 450 ml nerez</h3>
+          <p><strong>Před:</strong> Termohrnek z nerezové oceli. Objem 450 ml. Dvojitá stěna. Víčko s uzávěrem. Barva černá.</p>
+          <p><strong>Po:</strong> Termo hrnek o objemu 450 ml je vyroben z nerezové oceli. Má dvojitou stěnu, víčko s uzávěrem a černou barvu.</p>
+          <p><strong>SEO titulek:</strong> Termo hrnek 450 ml nerez, dvojitá stěna</p>
+          <p><strong>Meta popis:</strong> Termo hrnek z nerezové oceli o objemu 450 ml. Má dvojitou stěnu, víčko s uzávěrem a černou barvu.</p></div>
+        <div class="card"><h3>Dětské pastelky 12 barev</h3>
+          <p><strong>Před:</strong> Pastelky pro děti. Sada 12 barev. Šestihranný tvar. Dřevěné tělo.</p>
+          <p><strong>Po:</strong> Sada dětských pastelek obsahuje 12 barev. Pastelky mají šestihranný tvar a dřevěné tělo.</p>
+          <p><strong>SEO titulek:</strong> Dětské pastelky 12 barev, šestihranné</p>
+          <p><strong>Meta popis:</strong> Dětské pastelky v sadě 12 barev. Mají šestihranný tvar a dřevěné tělo.</p></div>
+        <div class="card"><h3>Bavlněná utěrka 50x70 cm</h3>
+          <p><strong>Před:</strong> Utěrka z bavlny. Rozměr 50x70 cm. Praktické poutko na pověšení. Pratelná.</p>
+          <p><strong>Po:</strong> Bavlněná utěrka má rozměr 50x70 cm. Je opatřená praktickým poutkem na pověšení a je pratelná.</p>
+          <p><strong>SEO titulek:</strong> Bavlněná utěrka 50x70 cm, pratelná</p>
+          <p><strong>Meta popis:</strong> Bavlněná utěrka o rozměru 50x70 cm. Má praktické poutko na pověšení a je pratelná.</p></div>
       </div>
     </div>
   </section>
@@ -168,6 +233,11 @@
         <details><summary>Kolik stojí celá dávka?</summary><p>100 produktů za 990 Kč, 300 produktů za 2 490 Kč. Platí se kartou předem, CSV dodáme do 48 hodin od platby. Po vzorku se sami rozhodnete, jestli chcete pokračovat.</p></details>
         <details><summary>Jak texty vznikají?</summary><p>Jazykový model píše podle údajů, které už o produktu máte. Každou dávku kontrolujeme, než ji pošleme. Fakta z původního popisu zůstávají, nic nepřidáváme.</p></details>
         <details><summary>Pracujete s osobními údaji?</summary><p>Ne. Potřebujeme jen údaje o produktech. Neposílejte nám objednávky ani údaje o zákaznících.</p></details>
+        <details><summary>Které platformy podporujete?</summary><p>Pracujeme s CSV exportem. Nejlépe funguje export ze Shoptetu. Z jiných platforem (například WooCommerce) vezmeme CSV, ve kterém jsou názvy a popisy produktů. Pokud soubor neumíme zpracovat, napíšeme vám to hned a nic neúčtujeme.</p></details>
+        <details><summary>Jak exportuji CSV ze Shoptetu?</summary><p>V administraci Shoptetu otevřete export produktů (sekce Produkty, Export) a stáhněte ho jako CSV. Stačí produkty. Do exportu nepřidávejte objednávky ani zákazníky. Soubor nám pošlete e-mailem na agents@robotaworks.com.</p></details>
+        <details><summary>Jaká data si necháváte a kdy je mažete?</summary><p>Používáme jen veřejné údaje o produktech: kód, název, popisy, SEO titulek a meta popis. Ostatní sloupce z exportu zahodíme dřív, než se soubor zpracuje. Podklady od vás smažeme 14 dní po dodání, pokud nás nepožádáte o úpravy.</p></details>
+        <details><summary>Za jak dlouho to dostanu?</summary><p>Vzorek 10 produktů do 24 hodin od doručení exportu. Celá dávka do 48 hodin od platby.</p></details>
+        <details><summary>Co když se mi vzorek nelíbí?</summary><p>Nic neplatíte a nic vám nenaúčtujeme. Napište nám, co se vám nelíbí, a vzorek upravíme. Pokud chcete skončit, stačí neplatit.</p></details>
       </div>
     </div>
   </section>
