@@ -13,6 +13,7 @@ Owner of updates: the growth role, tracked from hq#113.
   add-on (was the homepage until 2026-10-14)
 - `popisy-produktu-prepsane/index.html` - Czech offer page for the one-off
   product description rewrite (hq#164). Prices and live Stripe payment links since 2026-10-16 (hq#8).
+- `blog/` - Czech how-to articles (hq#218, hq#216 B), each links the offer page. Index at `/blog/`.
 - New project: give it its own folder page and add a card to the projects
   grid on both homepages and to `sitemap.xml`.
 - `robots.txt`, `sitemap.xml`, `404.html`, `CNAME`, `favicon.svg`, `styles.css`
