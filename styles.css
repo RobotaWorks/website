@@ -378,3 +378,36 @@ html.js .rv.in{opacity:1;transform:none}
   .home .proj:hover,.home .proj:hover .icon,.home .proj:hover .more svg,.home .proj:focus-within{transform:none}
   .home .proj:has(.more):hover,.home .proj:has(.more):focus-within{transform:none}
 }
+
+/* product pages (body.home): mockup float, before -> after line, CSV illustration, steps and card glow */
+.home .mock{animation:float 7s ease-in-out infinite alternate;transform:perspective(1200px) rotateY(-3deg) rotateX(1.5deg)}
+@keyframes float{from{transform:perspective(1200px) rotateY(-3deg) rotateX(1.5deg) translateY(0)}to{transform:perspective(1200px) rotateY(2deg) rotateX(0) translateY(-10px)}}
+.home .mock .diff .new p{animation:wipe 9s ease-in-out infinite}
+.home .mock .diff .old p{animation:strike 9s ease-in-out infinite}
+@keyframes wipe{0%,12%{clip-path:inset(0 100% 0 0);opacity:1}45%,88%{clip-path:inset(0);opacity:1}97%{clip-path:inset(0);opacity:0}100%{clip-path:inset(0 100% 0 0);opacity:0}}
+@keyframes strike{0%,8%{text-decoration-color:transparent}25%,100%{text-decoration-color:rgba(180,83,9,.45)}}
+.hero-art.csv svg{max-height:340px}
+.hero-art.csv .pk{offset-path:path("M180 150H300")}
+.hero-art .rows rect{fill:rgba(191,219,254,.35)}
+.hero-art .old-rows rect{animation:row 4.8s ease-in-out infinite}
+.hero-art .old-rows rect:nth-child(2){animation-delay:.4s}.hero-art .old-rows rect:nth-child(3){animation-delay:.8s}.hero-art .old-rows rect:nth-child(4){animation-delay:1.2s}.hero-art .old-rows rect:nth-child(5){animation-delay:1.6s}
+@keyframes row{0%,100%{fill:rgba(191,219,254,.2)}20%{fill:rgba(191,219,254,.7)}40%{fill:rgba(191,219,254,.2)}}
+.hero-art .new-rows rect{fill:rgba(167,243,208,.55);transform-box:fill-box;transform-origin:left;animation:fill 6s ease-out infinite}
+.hero-art .new-rows rect:nth-child(2){animation-delay:.3s}.hero-art .new-rows rect:nth-child(3){animation-delay:.6s}.hero-art .new-rows rect:nth-child(4){animation-delay:.9s}.hero-art .new-rows rect:nth-child(5){animation-delay:1.2s}
+@keyframes fill{0%{transform:scaleX(0)}30%,90%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+.pp .steps li{transition:box-shadow .25s,transform .25s}
+.pp .steps li::before{background:linear-gradient(135deg,#2563eb,#6366f1);box-shadow:0 8px 18px -8px rgba(37,99,235,.7)}
+@media (min-width:961px){
+  .pp .steps li:not(:last-child)::after{content:"";position:absolute;top:44px;left:calc(26px + 44px);width:calc(100% - 70px + 20px);height:2px;background:linear-gradient(90deg,var(--accent),#818cf8);opacity:.5}
+}
+.pp .grid3>.card,.pp .steps li,.pp .panel{transition:box-shadow .25s,transform .25s}
+.pp .grid3>.card:hover,.pp .steps li:hover,.pp .panel:hover{transform:translateY(-6px);box-shadow:0 18px 40px -14px rgba(37,99,235,.45),0 0 28px -6px rgba(99,102,241,.35)}
+@media (hover:none){
+  .pp .grid3>.card:hover,.pp .steps li:hover,.pp .panel:hover{transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .home .mock{animation:none;transform:none}
+  .home .mock .diff .new p,.home .mock .diff .old p,.hero-art .old-rows rect,.hero-art .new-rows rect{animation:none}
+  .pp .grid3>.card,.pp .steps li,.pp .panel{transition:none}
+  .pp .grid3>.card:hover,.pp .steps li:hover,.pp .panel:hover{transform:none}
+}
