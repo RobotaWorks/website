@@ -25,6 +25,7 @@
 <link rel="stylesheet" href="/styles.css">
 <script>document.documentElement.classList.add('js')</script>
 <script src="/menu.js" defer></script>
+<script src="/motion.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -165,21 +166,11 @@
       <p class="lead">Pošlete nám adresu svého e-shopu. Do 24 hodin vám pošleme 10 přepsaných popisů zdarma. Líbí se? Přepíšeme zbytek katalogu.</p>
       <div class="actions"><a class="btn" href="mailto:agents@robotaworks.com?subject=Vzorek%2010%20popis%C5%AF%20zdarma&amp;body=Adresa%20m%C3%A9ho%20e-shopu%3A%20https%3A%2F%2F">Chci vzorek zdarma</a><a class="btn ghost" href="#postup">Jak to probíhá</a></div>
       </div>
-      <div class="hero-art csv">
-        <svg viewBox="0 0 480 300" role="img" aria-label="Schéma: CSV export produktů se promění v CSV s přepsanými popisy" focusable="false">
-          <defs>
-            <linearGradient id="hf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6" stop-opacity=".28"/><stop offset="1" stop-color="#6366f1" stop-opacity=".12"/></linearGradient>
-          </defs>
-          <path class="flow" d="M180 150H300"/>
-          <g class="pk pk1"><circle r="9"/><circle r="4.5"/></g>
-          <g class="pk pk2"><circle r="9"/><circle r="4.5"/></g>
-          <g class="pk pk3"><circle r="9"/><circle r="4.5"/></g>
-          <g class="node n1"><rect x="30" y="40" width="150" height="220" rx="14"/><text x="105" y="76">CSV</text></g>
-          <g class="rows old-rows"><rect x="50" y="100" width="110" height="8" rx="4"/><rect x="50" y="130" width="90" height="8" rx="4"/><rect x="50" y="160" width="110" height="8" rx="4"/><rect x="50" y="190" width="70" height="8" rx="4"/><rect x="50" y="220" width="100" height="8" rx="4"/></g>
-          <g class="node n2"><rect x="300" y="40" width="150" height="220" rx="14"/><text x="375" y="76">CSV</text></g>
-          <g class="rows new-rows"><rect x="320" y="100" width="110" height="8" rx="4"/><rect x="320" y="130" width="110" height="8" rx="4"/><rect x="320" y="160" width="110" height="8" rx="4"/><rect x="320" y="190" width="110" height="8" rx="4"/><rect x="320" y="220" width="110" height="8" rx="4"/></g>
-          <path class="tick" d="M410 52l6 6 12-14"/>
-        </svg>
+      <div class="hero-art csvfx" role="img" aria-label="Schéma: CSV export produktů se promění v CSV s přepsanými popisy">
+        <div class="csv-head"><span>export.csv</span><span>přepsané.csv</span></div>
+        <div class="csv-row"><p class="was">Termohrnek z nerezové oceli. Objem 450 ml. Dvojitá stěna. Víčko s uzávěrem. Barva černá.</p><p class="now">Termo hrnek o objemu 450 ml je vyroben z nerezové oceli. Má dvojitou stěnu, víčko s uzávěrem a černou barvu.</p></div>
+        <div class="csv-row"><p class="was">Pastelky pro děti. Sada 12 barev. Šestihranný tvar. Dřevěné tělo.</p><p class="now">Sada dětských pastelek obsahuje 12 barev. Pastelky mají šestihranný tvar a dřevěné tělo.</p></div>
+        <div class="csv-row"><p class="was">Utěrka z bavlny. Rozměr 50x70 cm. Praktické poutko na pověšení. Pratelná.</p><p class="now">Bavlněná utěrka má rozměr 50x70 cm. Je opatřena praktickým poutkem na pověšení a je pratelná.</p></div>
       </div>
     </div>
   </section>

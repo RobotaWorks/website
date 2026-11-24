@@ -17,6 +17,8 @@ Owner of updates: the growth role, tracked from hq#113.
 - New project: give it its own folder page and add a card to the projects
   grid on both homepages and to `sitemap.xml`.
 - `robots.txt`, `sitemap.xml`, `404.html`, `CNAME`, `favicon.svg`, `styles.css`
+- `motion.js` - hero pipeline timeline (WAAPI) and the write-in typing in the mocks. Skipped under reduced motion; the HTML is already the finished frame.
+- `fonts/` - self-hosted Barlow Condensed, IBM Plex Sans and Mono (latin + latin-ext for Czech).
 - `menu.js` - opens and closes the phone menu (below 860 px). Without JS the
   header keeps the language link and the main button.
 
